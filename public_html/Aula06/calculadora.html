@@ -6,40 +6,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link href="Stylexss.css" rel="stylesheet">
-         <script>
-             function soma(){
-               var n1 = parseFloat (document.getElementById('n1').value);
-               var n2 = parseFloat (document.getElementById('n2').value);    
-               var resultado =0; 
-                if (document.getElementsByName('operacao')[0].checked) {    
-                   resultado = n1 + n2;  
-               }    
-               if (document.getElementsByName('operacao')[1].checked) {    
-                   resultado = n1 - n2;    
-               }    
-               if (document.getElementsByName('operacao')[2].checked) {    
-                   resultado = n1 * n2;    
-               }    
-               if (document.getElementsByName('operacao')[3].checked) {    
-                   resultado = n1 / n2;    
-               }    
-               document.getElementById('resultado').value = resultado;    
-            }    
-                 
-                
-             
-         </script>
+         <script type="text/javascript">
+    function somarValores(){
+        var s1 = document.getElementById("txt1").value;
+        var s2 = document.getElementById("txt2").value;
+        var s3 = parseInt(s1) + parseInt(s2);
+        alert(s3);
+    }
+</script>
     </head>
     <body>
         
-        <p>#1: <input id="n1"  type="text" size="30" ></p>
-        <p>#2: <input id="n2"  type="text" size="30" ></p>
-        <input id="soma" type= "button" value="+" onclick="soma()">
-         <input id="subtracao" type= "button" value="-">
-           <input id="multiplicacao" type= "button" value="x">
-             <input id="divisao" type= "button" value="/">
-             <p>Resultado: </p>
-           
+      <fieldset>
+    <legend>Calculadora Simples</legend>
+    <label>Valor 1:</label>
+    <input id="txt1" type="text"/>
+    <label>Valor 2: </label>
+    <input id="txt2" type="text"/>
+    <button id="somar" onclick="somarValores()">Somar</button>
+</fieldset>
              
    
         
