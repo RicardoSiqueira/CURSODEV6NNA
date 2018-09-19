@@ -13,6 +13,12 @@
         var s3 = parseInt(s1) + parseInt(s2);
         alert(s3);
     }
+      function MultiplicaValores(){
+        var s1 = document.getElementById("txt1").value;
+        var s2 = document.getElementById("txt2").value;
+        var s3 = parseInt(s1) * parseInt(s2);
+        alert(s3);
+    }
 </script>
     </head>
     <body>
@@ -23,7 +29,8 @@
     <input id="txt1" type="text"/>
     <label>Valor 2: </label>
     <input id="txt2" type="text"/>
-    <button id="somar" onclick="somarValores()">Somar</button>
+    <button id="somar" onclick="somarValores()">+</button>
+    <button id="Multiplica" onclick="MultiplicaValores()">x</button>
 </fieldset>
              
    
