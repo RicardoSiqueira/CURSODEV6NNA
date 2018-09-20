@@ -13,25 +13,48 @@
         var s3 = parseInt(s1) + parseInt(s2);
         alert(s3);
     }
-      function MultiplicaValores(){
+      function SubtraiValores(){
+        var s1 = document.getElementById("txt1").value;
+        var s2 = document.getElementById("txt2").value;
+        var s3 = parseInt(s1) - parseInt(s2);
+        alert(s3);
+    }
+       function MultiplicaValores(){
         var s1 = document.getElementById("txt1").value;
         var s2 = document.getElementById("txt2").value;
         var s3 = parseInt(s1) * parseInt(s2);
         alert(s3);
     }
+        function DivideValores(){
+        var s1 = document.getElementById("txt1").value;
+        var s2 = document.getElementById("txt2").value;
+        var s3 = parseInt(s1) / parseInt(s2);
+        alert(s3);
+    }
+    function zeraMeuID(){
+
+     document.getElementById("txt1").value = "";
+     document.getElementById("txt2").value = "";
+
+}
 </script>
     </head>
     <body>
         
-      <fieldset>
-    <legend>Calculadora Simples</legend>
+    
     <label>Valor 1:</label>
     <input id="txt1" type="text"/>
+    <br>
     <label>Valor 2: </label>
     <input id="txt2" type="text"/>
+     <br>
+       <br>
     <button id="somar" onclick="somarValores()">+</button>
-    <button id="Multiplica" onclick="MultiplicaValores()">x</button>
-</fieldset>
+    <button id="Multiplica" onclick="SubtraiValores()">-</button>
+     <button id="Multiplica" onclick="MultiplicaValores()">x</button>
+      <button id="Multiplica" onclick="DivideValores()">/</button>
+      <button id="Limpar" onclick="zeraMeuID()"> Limpar</button>
+
              
    
         
