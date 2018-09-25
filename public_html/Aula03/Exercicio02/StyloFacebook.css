@@ -1,0 +1,12 @@
+#Nome,#Sobrenome{
+   border-radius: 5px; 
+}
+
+#Email_Celular,#Insira_Novamente,#NovaSenha{
+    width: 332px;
+    border-radius: 5px;
+}
+#BtnAbrirConta{
+    background-color: #009900;
+    color: #ffffff
+}

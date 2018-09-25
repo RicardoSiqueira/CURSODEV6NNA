@@ -3,6 +3,9 @@
     "attributes": {
         "a": {
             "context": "form"
+        },
+        "vale": {
+            "context": "input"
         }
     }
 }
