@@ -6,6 +6,12 @@
         },
         "vale": {
             "context": "input"
+        },
+        "notas": {
+            "context": "h3"
+        },
+        "h3": {
+            "context": "h3"
         }
     }
 }
