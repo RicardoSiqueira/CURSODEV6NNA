@@ -13,7 +13,12 @@
 #enviar{
     
     background-color: green;
+    color:#ffffff;
    
+}
+#limpar{
+    background-color:orange;
+    color:#ffffff;
 }
 #borda1,#borda2,#borda3{
     border-style: dashed;
