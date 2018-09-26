@@ -1,6 +1,37 @@
-p{
-    display: inline;
-    display: block;
-
-
+#borda1{
+    height: 60px;
+    border-color: yellow;
+    font-size: 20px;
+    color:yellow;
+    border-style: dashed;
+    background-color: black;
 }
+
+body{
+    background-color: #666666
+}
+#p1{
+    color:white;
+    font-size: 20px;
+}
+#p2{
+    color:yellow;
+    font-size: 30px;
+}
+#formas_css{
+    height: 80px;
+    width: 1000px;
+  
+    border-color: white;
+    font-size: 20px;
+    color:yellow;
+    border-style: solid;
+    background-color: #00ccff;
+}
+#ol1 {list-style: none; counter-reset: li}
+li::before {content: counter(li); color: white;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+li {counter-increment: li}
+
+p span#cor1 {	 color: white;}p span#cor2 {	color: #ffcccc;}
