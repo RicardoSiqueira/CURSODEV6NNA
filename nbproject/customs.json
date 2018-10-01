@@ -1,5 +1,7 @@
 {
-    "elements": {},
+    "elements": {
+        "legend": {}
+    },
     "attributes": {
         "a": {
             "context": "form"
