@@ -1,72 +1,93 @@
 <!DOCTYPE html>
-
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
     <head>
-        <title>Calculadora</title>
+        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="Estile.css" rel="stylesheet">
-        <script type="text/javascript">
-            function areaTriangulo() {
+         <link href="Estile.css" rel="stylesheet">
+         <script type="text/javascript">
+          function areaTriangulo() {
                 var s1 = document.getElementById("txt1").value;
                 var s2 = document.getElementById("txt2").value;
                 var s3 = parseInt(s1) * parseInt(s2)/2;
                 document.getElementById("txt3").value = s3;
-            }
-             function areaquadrado() {
+            }  
+            function areaQuadrado() {
                 var s1 = document.getElementById("txt4").value;
                 
                 var s2 = parseInt(s1) * parseInt(s1)
-                document.getElementById("txt6").value = s2;
+                document.getElementById("txt5").value = s2;
             }
-           
-
             
-            function zeraMeuID() {
-
-                document.getElementById("txt1").value = "";
-                document.getElementById("txt2").value = "";
-                document.getElementById("txt3").value = "";
-
-            }
-        </script>
+            function areaTrapezio() {
+                var s1 = document.getElementById("txt6").value;
+                var s2 = document.getElementById("txt7").value;
+                var s3 = document.getElementById("txt8").value;
+                var s4 = (parseInt(s1) + parseInt(s2))*parseInt(s3)/2;
+                document.getElementById("txt9").value = s4;
+            }  
+             
+             
+             
+             
+             
+         </script>
+         
+         
+         
     </head>
     <body>
-     <legend>Triangulo:
-    <div id="div_triangulo"><br><br><br><br><br><br><br>
+<table border="1">
+<tr>
+<th>Triangulo</th>
+<th>Quadrado</th>
+<th>Trapezio</th>
+</tr>
+<tr>
+
+<td><img src="imagem/triangulo_1.png" alt=""/></td>
+<td><img src="imagem/quadrado.png" alt=""/></td>
+<td><img src="imagem/trapezio.png" alt=""/></td>
+</tr>
+
+
+<tr>
+    <td>
     <label id="Lbase">Base: </label>
     <input id="txt1" type="text"/><br><br>
-     <label>Altura: </label>
-     <input id="txt2" type="text"/><br><br>
-      <button id="somar" onclick="areaTriangulo()">Calc.Area</button>
-      <label>Área: </label>
-      <input id="txt3" type="text"/>
-      </div> 
-        </legend>
-    
-    
-    <legend>Quadrado:
-    <div id="div_quadrado"><br><br><br><br><br><br><br>
+    <label>Altura: </label>
+    <input id="txt2" type="text"/><br><br>
+    <button id="somar" onclick="areaTriangulo()">Calc.Area</button>
+    <label>Área: </label>
+    <input id="txt3" type="text"/>
+        
+    </td>
+    <td>
     <label id="Lbase">Lado: </label>
     <input id="txt4" type="text"/><br><br>
-    
-     <button id="somar" onclick="areaquadrado()">Calc.Area</button>
-     <label>Area: </label>
-     <input id="txt6" type="text"/>
-     </div> 
-        </legend>
-    
-    
-    <legend>Retangulo:
-    <div id="div_retangulo"><br><br><br><br><br><br><br>
-    <label id="Lbase">Base: </label>
+    <button id="somar" onclick="areaQuadrado()">Calc.Area</button>
+    <label>Área: </label>
+    <input id="txt5" type="text"/>
+    </td>
+    <td>
+        <label id="Lbase">Base Maior: </label>
+    <input id="txt6" type="text"/><br><br>
+    <label id="Lbase">Base menor: </label>
     <input id="txt7" type="text"/><br><br>
-     <label>Altura: </label>
-     <input id="txt8" type="text"/><br><br>
-     <button id="somar" onclick="somarValores()">Calcular</button>
-     <label>Resultado: </label>
-     <input id="txt9" type="text"/>
-     </div> 
-         </legend>
-      </body>    
-      </html> 
+    <label id="Lbase">Altura: </label>
+    <input id="txt8" type="text"/><br><br>
+    <button id="somar" onclick="areaTrapezio()">Calc.Area</button>
+    <label>Área: </label>
+    <input id="txt9" type="text"/>
+        
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

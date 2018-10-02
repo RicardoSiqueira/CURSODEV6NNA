@@ -1,6 +1,9 @@
-#div_triangulo,#div_quadrado,#div_retangulo{
-    width:350px;
-    height:250px;
-    border-style:double;    
-  }
- 
+#txt1,#txt4,#txt6,#txt7,#txt8{
+    width: 60px;
+}
+#txt2{
+   width: 50px;  
+}
+#txt3,#txt5,#txt9{
+    width: 90px; 
+}
