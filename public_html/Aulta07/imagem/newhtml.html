@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />
+<title>Teste</title>
+</head>
+<body>
+
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] == "POST")
+{
+	echo "<h1>" . $_POST['combo'] . "</h1>";
+}
+
+?>
+
+<form method='post' action=''>
+<select name='combo'>
+	<option value='1'>Valor 1</option>
+	<option value='2'>Valor 2</option>
+</select>
+<input type='submit' value='enviar' />
+</form>
+
+</body>
+</html>

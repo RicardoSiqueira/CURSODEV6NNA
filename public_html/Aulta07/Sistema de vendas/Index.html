@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Stilo_Padaria.css" rel="stylesheet">
+       
+   <script>
+function myFunction() {
+    var x = document.createElement("P");
+    var t = document.createTextNode("Descrição");
+    x.appendChild(t);
+    document.body.appendChild(x);
+}
+
+function areaTriangulo() {
+                var s1 = document.getElementById("select").value;
+                
+                var s3 = parseInt(s1) * parseInt(s2)/2;
+                document.getElementById("txt3").value = s3;
+                }
+</script>
+        
+    </head>
+    <body>
+        <div id="borda">
+            <img src="../imagem/restaurant.png" align="left" width="70" height="70" alt=""/>
+            <h4>  Padaria do seu Ze </h4> </div>
+        <h5>  Comando do cliente </h5><br>
+          <p> Produto </p>
+            <select name="produto">
+                <option value="Pão Careca">Pão Careca</option>
+                <option value="Pão Hamburguer">Pão Hamburguer</option>
+                <option value="Pao de milho">Pao de milho</option>
+                <option value="Pao de queijo">Pao de queijo</option>
+                <option value="Café">Café</option>
+                <option value=" bolo">Fatia de bolo</option>
+               </select>
+               <label id="Lbase">Quantidade: </label>
+               <input id="txt1" type="text"/>
+               
+                <label id="Lbase">Preço: </label>
+               <input id="txt2" type="text"/>
+                <label id="Lbase">SubTotal: </label>
+                <input id="txt3" type="text"/><br><br>
+                
+                <button onclick="myFunction()">Adicionar ao carrinho</button>
+             
+           
+        
+            
+
+
+
+        
+         
+        
+    </body>
+</html>

@@ -1,0 +1,9 @@
+#borda{
+    width: 1000px;
+    height: 90px;
+    font-size: 20px;
+    color:black;
+    border-style: solid;
+    background-color:#999999
+  
+}
